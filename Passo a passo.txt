@@ -1,0 +1,20 @@
+1 - iniciar um repositorio no github e clonar em uma pasta
+2 - abrir o terminal no vscode e digitar: npm init
+3 - ele vai pedir as informações do jason nome do chat nome do criador licença etc...
+4 - criar um arquivo index.js
+5 - ir em scripts no pachage.jason e adicionar esse codigo: "dev": "node index.js" e toda vez para iniciar o projeto digita no terminal: npm run dev ( node pachage manager inicie o script dev)
+------------------------------
+
+6 - usar a lib whatsapp web: https://wwebjs.dev/guide/#installation
+7 - instalar a lib: npm i whatsapp-web.js
+8 - instalar o qrcode terminal: npm install qrcode-terminal
+BUGADOOOOO NAO USAR 8aa - instalar para remover o bug dos botões que nao envia botão: npm i github:pedroslopez/whatsapp-web.js#fix-buttons-list
+ 8a - testar se tudo funcionou corretamente: npm run dev
+8b - a pasta .wwebjs_auth foi criada armazenando o whatsapp para nao ter que logar sempre
+
+
+bug que não passa do qrcode: npm i https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7 
+
+
+
+
