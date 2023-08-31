@@ -15,6 +15,6 @@ BUGADOOOOO NAO USAR 8aa - instalar para remover o bug dos botões que nao envia 
 
 bug que não passa do qrcode: npm i https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7 
 
-
+:)
 
 
