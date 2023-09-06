@@ -1,2 +1,3 @@
-2023/08/31-16:39:23.611 4508 Creating DB C:\Users\ednal\Desktop\robo\TESTEBOTVIDEOJR\NOVO ROBO\Começando do 0.1\ChatBot1.1\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
-2023/08/31-16:39:23.617 4508 Reusing MANIFEST C:\Users\ednal\Desktop\robo\TESTEBOTVIDEOJR\NOVO ROBO\Começando do 0.1\ChatBot1.1\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2023/09/06-16:27:33.402 3810 Reusing MANIFEST C:\Users\ednal\Desktop\ChatBot1.1\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2023/09/06-16:27:33.402 3810 Recovering log #3
+2023/09/06-16:27:33.403 3810 Reusing old log C:\Users\ednal\Desktop\ChatBot1.1\.wwebjs_auth\session\Default\Local Storage\leveldb/000003.log 

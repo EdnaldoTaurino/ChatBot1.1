@@ -19,7 +19,7 @@ client.on('ready', () => {
 
 var clientes = []; // Criando uma variavel clientes para salvar os clientes
 
-var cliente = {numero: '889797987987', senha: '123456', saldo: 0};  //cada cliente separado
+// var cliente = {numero: '889797987987', senha: '123456', saldo: 0};  //cada cliente separado
 
 //quando receber uma mensagem
 //msg, mostra toda mensagem numero da pessoa e conteúdo. msg.body mostra apenas o corpo da mensagem
@@ -44,14 +44,14 @@ function mensagemTempo(to, mensagem) {
 
 client.on('message', msg => {
     if (!welcomeSent) {
-        if (msg.body.toLowerCase() === 'o' || msg.body.toLowerCase() === 'ola' || msg.body.toLowerCase() === 'olá') {
+        if (msg.body.toLowerCase() === 'oi' || msg.body.toLowerCase() === 'ola' || msg.body.toLowerCase() === 'olá') {
             enviarBoasVindas(msg.from); // Chamamos a função para enviar a mensagem de boas-vindas
         }
 
     } else {
         if (msg.body === '1') {
-            client.sendMessage(msg.from, 'Certo, te enviarei o Menu do dia!\nA qualquer momento digite 0 para voltar para o menu inicial\n*Digite 2 para iniciar o seu pedido!* (EMOJI PRATO)');
-
+            client.sendMessage(msg.from, 'Certo, te enviarei o Menu do dia!\nA qualquer momento digite 0 para voltar para o menu inicial\n*Digite 2 para iniciar o seu pedido!* 🥘');
+            client.sendMessage(msg.from, 'Menu do dia:\n\nFeijão preto\nFeijão carioca\nArroz branco\nArrroz carioca\n carnes');
         } else if (msg.body === '2') {
             // Iniciando o pedido
             client.sendMessage(msg.from, 'Certo, vamos iniciar seu pedido (EMOJI FELIZ)!\nAgora escreva todo o seu pedido e, ao finalizar, digite 0 (zero).\nExemplo:\n\nFeijão preto\nArroz branco\nBife acebolado\nGuisadinho de carne\nVinagrete\nSalada\n\nDesta forma acima. Pronto, pode escrever seu pedido que estou anotando:');
