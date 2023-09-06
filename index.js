@@ -1,5 +1,5 @@
 //const uma variavel no js, esta dizendo que a variavel cons vai usar o client buttons localauth do whatsapp-web.js
-const { Client, Button, LocalAuth } = require('whatsapp-web.js');
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require ('qrcode-terminal'); //Variavel que cria o qrcode para autenticação do whatsapp web
 
 //criando o cliente e deixando salva pra logar apenas uma vez
@@ -69,6 +69,7 @@ client.on('message', msg => {
                 // Cliente finalizou o pedido
                 aguardandoPedido = false;
                 client.sendMessage(msg.from, `Seu pedido foi registrado:\n\n ${pedidoCliente}\n\nCaso tenha *ERRADO* e deseje alterar seu pedido digite: *Alterar*\nCaso esteja tudo certo por favor digite 5 para *continuar*`);
+                
             } else if (aguardandoEndereco) {
                 if (msg.body === '5') {
                     // Cliente finalizou o pedido de endereço
